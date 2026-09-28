@@ -1,0 +1,14 @@
+{
+  "name": "digital-clock-timezones",
+  "version": "1.0.0",
+  "description": "Digital clock displaying current time in multiple time zones with real-time updates",
+  "main": "index.html",
+  "keywords": [
+    "clock",
+    "timezone",
+    "real-time",
+    "world-clock"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}

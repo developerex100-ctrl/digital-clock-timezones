@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>World Clock - Multiple Time Zones</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="clock-app">
+      <header class="app-header">
+        <h1>🌍 World Clock</h1>
+        <p class="subtitle">Real-time display of current time in multiple time zones</p>
+      </header>
+
+      <div class="controls">
+        <button id="add-timezone-btn" class="btn btn-primary">+ Add Time Zone</button>
+        <button id="reset-btn" class="btn btn-secondary">Reset</button>
+      </div>
+
+      <div class="clock-grid" id="clock-grid">
+        <!-- Clock cards will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <!-- Modal for adding custom timezone -->
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Add Time Zone</h2>
+        <input
+          id="timezone-search"
+          type="text"
+          placeholder="Search timezone (e.g., Asia/Tokyo, America/New_York)"
+          class="modal-input"
+        />
+        <div id="timezone-list" class="timezone-list"></div>
+        <div class="modal-actions">
+          <button id="modal-close" class="btn btn-secondary">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
